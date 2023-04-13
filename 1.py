@@ -1,3 +1,3 @@
-a=100
-b=200
-print(a+b)
+value=range(100)
+for i in value:
+    print(i)
