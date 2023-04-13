@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form action="">
+        
+        <input type="range" name="" id="range" min="10" step="1" max="100">
+        <p>Value :<output id="value" ></output></p>
+    </form>
+    <script>
+
+        const value=document.querySelector('#value')
+        const input=document.querySelector('#range')
+
+        value.textContent=input.value
+        console.log(input.value)//console
+        input.addEventListener('input',(event)=>{
+            value.textContent=event.target.value
+            console.log(event.target.value)
+        })
+    </script>
+</body>
+</html>

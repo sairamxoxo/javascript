@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<style>
+  body{
+    background-color: black;
+  }
+</style>
+<body>
+  <button onclick="balls()"> slide show </button>
+  <img id='aaa' height="800px" ></img>
+  <img id='bbb'  height="600px">s</img>
+  
+  <button onclick="exit()">exit</button>
+
+<script>
+function balls() {
+  let image=document.getElementById("aaa");
+  let img_array=["RPG-Files/1.png",
+                "RPG-Files/baibu_t_1.png",
+                "RPG-Files/baibu_t_2.png",
+                 "RPG-Files/baibu_t_3.png",
+                "RPG-Files/baibu_t_4.png",
+              "RPG-Files/baibu_t_5.png",
+            "RPG-Files/baibu_t_6.png",
+          "RPG-Files/baibu_t_7.png",
+        "RPG-Files/baibu_t_8.png",
+      "RPG-Files/baibu_t_9.png",
+      "RPG-Files/bote_loveh1.png",
+      "RPG-Files/bote_loveh2.png",
+      "RPG-Files/bote_loveh3.png",
+      "RPG-Files/bote_youm_tu1.png",
+      "RPG-Files/bote_youm_tu2.png",
+      "RPG-Files/bote_youm_tu3.png",
+      "RPG-Files/bouz_sei1.png",
+      "RPG-Files/bouz_sei2.png",
+      "RPG-Files/bouz_sei3.png",
+      "RPG-Files/bouz_sei4.png",
+      "RPG-Files/bouz_sei5.png",
+      "RPG-Files/bouz_sei6.png",
+      "RPG-Files/bouz_sei7.png",
+      "RPG-Files/bouz_sei8.png",
+      "RPG-Files/chiad_hotenasi1.png",
+      "RPG-Files/chiad_hotenasi2.png",
+      "RPG-Files/chiakj_ht1.png",
+      "RPG-Files/chiakj_ht2.png",
+      "RPG-Files/chiakj_ht3.png",
+      "RPG-Files/chiakj_ht4.png",
+      "RPG-Files/chiakj_ht5.png",
+    ]
+  let index=0;
+  let interval = 1000;
+  function slide() {
+      image.src = img_array[index++%img_array.length];
+  }
+
+  setInterval(slide, interval);
+}
+function exit(){
+let image2=document.getElementById('aaa');
+let imageArray=['https://cdni.pornpics.de/1280/1/364/63581483/63581483_001_1ef6.jpg',
+                'https://cdni.pornpics.de/1280/1/364/63581483/63581483_002_586e.jpg']
+let index1=0;
+let interval1=2000;
+function slide2(){
+  image2.src=imageArray[index1++%imageArray.length];
+}
+setInterval(slide2,interval1);
+}
+</Script>
+
+</body>
+</html>

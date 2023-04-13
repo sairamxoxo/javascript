@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div id="1">one</div>
+<div id="2">two</div>
+<div id="3">three</div>
+<button onclick="create()">create</button>
+<script>
+function create(){
+    const newEle=document.createElement('div')
+    const newContent=document.createTextNode('get the fuck ouutahere')
+    newEle.appendChild(newContent);
+    const currentDiv=document.getElementById('1');
+    document.body.insertBefore(newEle,currentDiv)
+}
+</script>
+</body>
+
+</html>

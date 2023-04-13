@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    body{
+        background-color: black;
+    }
+    img:hover{
+        filter:blur(0px);
+        
+    }
+   div{
+    width:auto;
+    height: 100%;
+    display: block;
+    position: absolute;
+    margin-left: 30% ;
+    
+   }
+   img{
+    width: auto;
+    height: 100%;
+    filter: blur(10px);
+   }
+  
+  
+   
+</style>
+<body>
+   <button onclick="refresh()"> refresh</button>
+    <div><img id="img"></div>
+   x
+    <script>
+       
+        let image;
+        function refresh(){
+        const math=Math.floor(Math.random()*10)
+        
+        switch (math){
+                case 0:image=document.getElementById('img').src='https://cdni.pornpics.de/1280/1/59/34076717/34076717_001_c696.jpg'
+                break;
+                case 1:image=document.getElementById('img').src='https://cdni.pornpics.de/1280/1/59/34076717/34076717_002_4c56.jpg'
+                break;
+                case 2:image=document.getElementById('img').src='https://cdni.pornpics.de/1280/7/633/26210531/26210531_002_1087.jpg'
+                break;
+                case 3:image=document.getElementById('img').src='https://cdni.pornpics.de/1280/1/59/34076717/34076717_003_d18f.jpg'
+                break;
+                case 4:image=document.getElementById('img').src='https://cdni.pornpics.de/1280/1/59/34076717/34076717_004_bf39.jpg'
+                break;
+                case 5:image=document.getElementById('img').src='https://cdni.pornpics.de/1280/1/59/34076717/34076717_005_cabe.jpg'
+                break;
+                case 6:image=document.getElementById('img').src='https://cdni.pornpics.de/1280/1/59/34076717/34076717_006_a2b5.jpg'
+                break;
+                case 7:image=document.getElementById('img').src='https://cdni.pornpics.de/1280/1/59/34076717/34076717_007_a2b5.jpg'
+                break;
+                case 8:image=document.getElementById('img').src='https://cdni.pornpics.de/1280/1/59/34076717/34076717_008_b7c2.jpg'
+                break;
+                case 9:image=document.getElementById('img').src='https://cdni.pornpics.de/1280/1/59/34076717/34076717_013_ca3d.jpg'
+                break;
+                case 10:image=document.getElementById('img').src='https://cdni.pornpics.de/1280/1/59/34076717/34076717_016_7156.jpg'
+                break;
+                default:image=document.getElementById('img').src='https://images.pexels.com/photos/674010/pexels-photo-674010.jpeg'
+
+        }}
+      
+    </script>
+   
+</body>
+</html>
